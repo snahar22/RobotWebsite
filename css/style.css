@@ -1,0 +1,128 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0; 
+	padding: 0;
+	overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  width: 100%;  
+  margin: 0 auto; 
+  padding: 0px;
+  height: 100%;
+}
+h1{
+	position: relative;
+	text-align: center;
+	color: white;
+	white-space: nowrap; 
+	overflow: hidden;
+  margin: 1.2em 0 0 0;  
+}
+.header-1{
+  	font-size:160px !important;
+}
+.header-2{
+	font-size: 90px !important;
+	position: relative;
+	animation: move 2s;
+    -webkit-animation: move 2s;
+    animation-iteration-count: infinite;
+}
+.header-4{
+    font-size: 100px !important;
+    animation: bounce 0.9s;
+ 	animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+    animation-iteration-count: infinite;
+}
+.background{
+	  margin:0;
+	  padding: 0;
+    min-width: 100vw;
+    min-height:  100vh;
+	  overflow: auto;
+	  background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center; 
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size:100vw vh;
+	  background-repeat: no-repeat;
+}
+.anim-typewriter{
+  animation: typewriter 2.5s steps(30) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+  animation-iteration-count: infinite;
+  border-right: 2px solid rgba(255,255,255,.75);
+}
+
+@keyframes typewriter{
+  from{
+  	margin-left: 18%;
+  	width: 0;
+  }
+  to{
+  	margin-left: 18%;
+  	width: 5.4em;
+  }
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: white;} /*transparent*/
+}
+
+@keyframes move {
+  from {
+    margin-right: 100%;
+    width: 0; 
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes bounce {
+ 0% {
+  transform: translate3d(0,0,0);
+}
+10%{
+  transform: translate3d(0,4px,0);
+}
+20%{
+  transform: translate3d(0,-4px,0);
+}
+30%{
+  transform: translate3d(0,4px,0);
+}
+100%{
+  transform: translate3d(0,200px,0);
+   }
+ }
+.section_one{
+	background-image: url("../Images/rob2.png"),url("../Images/gs_bg-peachy.png");
+}
+.section_two{
+  background-image: url("../Images/rob1.png"),url("../Images/gs_bg-peachy.png");
+}
+.section_three{
+	background-image:url("../Images/gs_bg-peachy.png");
+}
+.section_five{
+	background-image: url("../Images/chill.png"),url("../Images/gs_bg-peachy.png");
+}
+.vidClass{
+  margin: 0;
+}
+#video_section{
+    min-width: 100%;
+    height: 100vh; !important;
+    margin:0;
+    overflow: hidden;
+    filter: multiply;
+    border: .5px black solid; /* REMOVE! */
+}
